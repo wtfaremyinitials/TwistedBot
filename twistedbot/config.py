@@ -7,10 +7,10 @@ WHISPER = False
 ONLINE_LOGIN = False
 USE_ENCRYPTION = ONLINE_LOGIN
 
-COMMANDER = "lukleh"
+COMMANDER = "1770749"
 COMMANDER = COMMANDER.lower()
 
-USERNAME = "twistedbot"
+USERNAME = "1770749_bot"
 PASSWORD = ""
 
 #This is the email address associated with your Mojang account. If you have not migrated your minecraft account to a Mojang account, set this to you minecraft username
@@ -58,5 +58,11 @@ COST_LADDER = 0.21 / \
 COST_FALL = 1.1
 COST_DIRECT = 1
 COST_DIAGONAL = math.sqrt(2) * COST_DIRECT
-PATHFIND_LIMIT = 400  # roughly in blocks
+PATHFIND_LIMIT = 1000  # roughly in blocks
 HORIZONTAL_MOVE_DISTANCE_LIMIT = 2.83
+
+with open ("~/twistedbotpassword.txt", "r") as file:
+    PASSWORD=file.read().replace('\n', '')
+
+with open ("~/twistedbotemail.txt", "r") as file:
+    EMAIL=file.read().replace('\n', '')
