@@ -61,8 +61,8 @@ COST_DIAGONAL = math.sqrt(2) * COST_DIRECT
 PATHFIND_LIMIT = 1000  # roughly in blocks
 HORIZONTAL_MOVE_DISTANCE_LIMIT = 2.83
 
-with open ("../../stuff/twistedbotpassword.txt", "r") as file:
+with open ("../stuff/twistedbotpassword.txt", "r") as file:
     PASSWORD=file.read().replace('\n', '')
 
-with open ("../../stuff/twistedbotemail.txt", "r") as file:
+with open ("../stuff/twistedbotemail.txt", "r") as file:
     EMAIL=file.read().replace('\n', '')
