@@ -66,3 +66,9 @@ with open ("../stuff/twistedbotpassword.txt", "r") as file:
 
 with open ("../stuff/twistedbotemail.txt", "r") as file:
     EMAIL=file.read().replace('\n', '')
+
+try:
+   with open ("../stuff/twistedbotserver.txt", "r") as file:
+   	SERVER_HOST=file.read().replace('\n', '')
+except IOError:
+   pass
